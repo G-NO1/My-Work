@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'upodatePlan/updateGUI.py'
+      - 'updateGUI.py'
       - '.github/workflows/build_mac.yml'
 
 jobs:
