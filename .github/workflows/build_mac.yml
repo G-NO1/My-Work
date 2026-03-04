@@ -28,11 +28,10 @@ jobs:
 
     - name: Build application
       run: |
-        cd upodatePlan
         pyinstaller --onefile --windowed --name "计划维护助手" updateGUI.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: 计划维护助手-Mac
-        path: upodatePlan/dist/计划维护助手
+        path: 计划维护助手
